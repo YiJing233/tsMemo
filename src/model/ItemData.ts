@@ -22,7 +22,9 @@ class ItemData {
     }
   
     toSelfDateStr(timeSpan: number): string {
+      // 将时间戳转换为日期对象
       let date = new Date(timeSpan);
+      // 使用日期对象的 get方法依次获取年月日时分秒 拼接成想要的格式
       let str =
         date.getFullYear() +
         "-" +
@@ -33,6 +35,7 @@ class ItemData {
         date.getHours() +
         ":" +
         date.getMinutes();
+        // 返回日期字符串
       return str;
     }
   }

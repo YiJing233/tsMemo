@@ -1,5 +1,6 @@
 import Category from './CategoryEnum';
 
+
 class ItemData {
     id!: number;
     categoryID!: Category;
